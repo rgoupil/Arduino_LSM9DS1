@@ -19,25 +19,6 @@
 
 #include "LSM9DS1.h"
 
-#define LSM9DS1_ADDRESS            0x6b
-
-#define LSM9DS1_WHO_AM_I           0x0f
-#define LSM9DS1_CTRL_REG1_G        0x10
-#define LSM9DS1_STATUS_REG         0x17
-#define LSM9DS1_OUT_X_G            0x18
-#define LSM9DS1_CTRL_REG6_XL       0x20
-#define LSM9DS1_CTRL_REG8          0x22
-#define LSM9DS1_OUT_X_XL           0x28
-
-// magnetometer
-#define LSM9DS1_ADDRESS_M          0x1e
-
-#define LSM9DS1_CTRL_REG1_M        0x20
-#define LSM9DS1_CTRL_REG2_M        0x21
-#define LSM9DS1_CTRL_REG3_M        0x22
-#define LSM9DS1_STATUS_REG_M       0x27
-#define LSM9DS1_OUT_X_L_M          0x28
-
 LSM9DS1Class::LSM9DS1Class(TwoWire& wire) :
   _wire(&wire)
 {
